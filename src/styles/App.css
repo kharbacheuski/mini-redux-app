@@ -6,7 +6,7 @@
   font-family: 'Arial', Arial, monospace;
 }
 
-body {
+#root {
   overflow-x: hidden;
 }
 

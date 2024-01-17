@@ -1,4 +1,6 @@
 .canvas {
+    height: 100vh;
+
     &__inner {
         display: flex;
         flex-direction: column;
@@ -20,8 +22,20 @@
         padding: 50px;
         background-color: #eeeeee7e;
 
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
 
+        @media (max-width: 768px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+            padding: 20px;
+        }
+    }
+
+    .mobile-hidden {
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__content {
@@ -30,8 +44,6 @@
         position: relative;
         transition: all 0.2s ease, transform 1ms;
 
-        @media (max-width: 767px) {
-            transform: translate(0px, 350px);
-        }
+        margin-top: 350px;
     }
 }

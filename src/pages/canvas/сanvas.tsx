@@ -29,11 +29,10 @@ const Canvas = () => {
                 <Box className="canvas__inner">
                     <Toolbar />
                     
-                    <Draggable
+                    {/* <Draggable
                         position={currentPosition}
                         onDrag={onDrag}
-                        allowAnyClick
-                    >
+                    > */}
                         <Box id="canvas-block" className="canvas__content" style={{
                             display: "flex",
                             alignItems: "center",
@@ -50,9 +49,9 @@ const Canvas = () => {
                             fontSize: canvasProperties.fontSize,
                             padding: "20px"
                         }}></Box>  
-                    </Draggable>
+                    {/* </Draggable> */}
 
-                    <Box className="author" sx={{ textAlign: "center", position: 'fixed', bottom: "20px", right: "20px",}}>
+                    <Box className="author" onClick={() => window.open("https://github.com/kharbacheuski")} sx={{ textAlign: "center", position: 'fixed', bottom: "20px", right: "20px",}}>
                         <Typography sx={{ 
                             fontWeight: 600,
                             

@@ -53,7 +53,7 @@ const Toolbar = () => {
                     />
                 </Box>
             </Box>
-            <Box>
+            <Box className="mobile-hidden">
                 <Box>
                     <Typography>Border-radius</Typography>
                     <Slider 
@@ -78,7 +78,7 @@ const Toolbar = () => {
                 </Box>
             </Box>
            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'space-between'}}>
-                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                <Box className="mobile-hidden" sx={{display: 'flex', flexDirection: 'column'}}>
                     <Typography>Opacity</Typography>
                     <Slider 
                         min={0}
@@ -91,7 +91,15 @@ const Toolbar = () => {
                         valueLabelDisplay="auto" 
                     />
                 </Box>
-                <Box sx={{display: 'flex', gap: 1, marginTop: "20px"}}>
+                <Box sx={{
+                    display: 'flex', 
+                    gap: 1, 
+                    marginTop: "20px",
+
+                    "@media (max-width: 768px)": {
+                        marginTop: "0px",
+                    }
+                }}>
                     <Button variant='contained' onClick={() => dispatch(actions.backgroundColor(getRandomColor()))}>Change background</Button>
 
                     <Button color='secondary' variant='contained' onClick={getRandomForm}>Random Form</Button>
