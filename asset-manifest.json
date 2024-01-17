@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mini-redux-app/public/static/css/main.b2897b44.css",
+    "main.js": "/mini-redux-app/public/static/js/main.a22e798f.js",
+    "static/js/787.ffd49c0f.chunk.js": "/mini-redux-app/public/static/js/787.ffd49c0f.chunk.js",
+    "index.html": "/mini-redux-app/public/index.html",
+    "main.b2897b44.css.map": "/mini-redux-app/public/static/css/main.b2897b44.css.map",
+    "main.a22e798f.js.map": "/mini-redux-app/public/static/js/main.a22e798f.js.map",
+    "787.ffd49c0f.chunk.js.map": "/mini-redux-app/public/static/js/787.ffd49c0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2897b44.css",
+    "static/js/main.a22e798f.js"
+  ]
+}
